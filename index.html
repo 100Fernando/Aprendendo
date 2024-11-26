@@ -8,7 +8,7 @@
         body {
             background-color: lightgreen;
             font: normal 14pt Arial;
-            color: rgb(42, 15, 58);
+            color: rgb(0, 0, 0);
         }
     </style>
 </head>
@@ -26,7 +26,7 @@
     <input type="number" name="tx1" id="tx1" placeholder="Informe 1 número"> e 
     <input type="number" name="tx2" id="tx2" placeholder="Informe outro número"> <br><br>
     <input type="text" name="nome" id="nome" placeholder="Informe seu nome: "><br><br>
-    <button type="button" value="Processar" id="processar">Processar</button>
+    <button type="button" value="Processar" id="processar">Processar</button><br>
     <div id="b1">Resultado:</div>
 
 
@@ -34,7 +34,7 @@
 
     </div>
 
-    <p><a href="..\Aulas\Eventos_DOM.html">Seguir para próximo tutorial, Eventos DOM</a></p>
+    <p><a href="Aulas\Eventos_DOM.html">Seguir para próximo tutorial, Eventos DOM</a></p>
     
 
     <script>
@@ -63,7 +63,7 @@
             } else {
                 divResult.innerHTML = `${result} <br>Viu como o pai é brabo no Javascript??`
             }
-            
+            divResult.style.background = "rgb(180, 216, 80)"
 
         }
 
