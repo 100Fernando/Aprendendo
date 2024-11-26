@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,25 +14,91 @@
 </head>
 <body>
     <h1>Olá</h1>
+
     <h2>Me chamo Fernando</h2>
-    <p>Aqui estou aprendendo a realizar cálculos e Javascript</p>
+
+    <p>Aqui estou aprendendo a realizar cálculos em Javascript</p>
+
     <p>Veja abaixo:</p>
+    
+    <!-- botão para fazer via popup de alerta <button type="button" id="confirma">Clique para fazer via popup</button><br><br> -->
+
+    <input type="number" name="tx1" id="tx1" placeholder="Informe 1 número"> e 
+    <input type="number" name="tx2" id="tx2" placeholder="Informe outro número"> <br><br>
+    <input type="text" name="nome" id="nome" placeholder="Informe seu nome: "><br><br>
+    <button type="button" value="Processar" id="processar">Processar</button>
+    <div id="b1">Resultado:</div>
+
+
+    <div id="a1">
+
+    </div>
+
+    <p><a href="..\Curso\Aulas\Eventos_DOM.html">Seguir para próximo tutorial, Eventos DOM</a></p>
+    
+
     <script>
-        let n1 = Number(window.prompt('Fala um nº aí marreco: '))
-        let n2 = Number(prompt('Fala outro nº ai meu consagrado: '))
-        let n3 = String(window.prompt('Me diga seu nome: '))
-        document.write(`Operador + -> ${n1} + ${n2} é igual à ${n1 + n2} <br>`)
-        document.write(`Operador - -> ${n1} - ${n2} é igual à ${n1 - n2}<br>`)
-        document.write(`Operador * -> ${n1} * ${n2} é igual à ${n1 * n2}<br>`)
-        document.write(`Operador / -> ${n1} / ${n2} é igual à ${n1 / n2}<br>`)
-        document.write(`Operador % = ${n1} % ${n2} é igual à ${n1 % n2} (aqui é o resto da divisão inteira. não sei pra que serve essa porra<br>`)
-        document.write(`Operador ** -> ${n1} ** ${n2} é igual à ${n1 ** n2}<br>`)
-        if(n3 == "Grazi" || n3 == "Graziele") {
-            document.write('Ps, Te amo Grazi')
-        }
-        else {
-                document.write('Viu ai que o Pai é brabo')
+        const processar = document.querySelector('button#processar')
+        processar.addEventListener('click', processo)
+
+        function processo() {
+            const tx1 = document.querySelector('input#tx1')
+            const tx2 = document.querySelector('input#tx2')
+            const nome = document.querySelector('input#nome')
+            const tx11 = Number(tx1.value)
+            const tx22 = Number(tx2.value)
+            const nome1 = String(nome.value)
+            const letras = nome1.length
+            const divResult = document.querySelector('div#b1')
+            const result = `O resultado é: <br>
+            Operador de adição (+): ${tx11} + ${tx22} = ${tx11 + tx22} <br>
+            Operador de subtração (-): ${tx11} - ${tx22} = ${tx11 - tx22} <br>
+            Operador de multiplicação (*): ${tx11} * ${tx22} = ${tx11 * tx22} <br>
+            Operador de divisão: ${tx11} / ${tx22} = ${tx11 / tx22} <br>
+            Operador de resto de divisão inteira (%): ${tx11} % ${tx22} = ${tx11 % tx22} <br> 
+            Operador de potência (**): ${tx11} ** ${tx22} = ${tx11 ** tx22} <br>
+            <br>Seu nome é: ${nome1} e tem ${letras} letras! <br>`
+            if(nome1 == "Grazi" || nome1 == "Graziele") {
+                divResult.innerHTML = `${result} <br>PS, te amo, meu bem!!`
+            } else {
+                divResult.innerHTML = `${result} <br>Viu como o pai é brabo no Javascript??`
             }
+            
+
+        }
+
+        
+
+        const div = document.querySelector('div#a1')
+        const confirmar = document.querySelector('button#confirma')
+
+        confirmar.addEventListener('click', confirma)
+
+        function confirma() {
+            const n1 = Number(prompt('Informe 1 número: '))
+            const n2 = Number(prompt('Informe outro número: '))
+            const n3 = String(prompt('Informe seu nome: '))
+            const result = 
+            `Operador + -> ${n1} + ${n2} é igual à ${n1 + n2} <br> 
+            Operador - -> ${n1} - ${n2} é igual à ${n1 - n2}<br> 
+            Operador * -> ${n1} * ${n2} é igual à ${n1 * n2}<br>
+            Operador / -> ${n1} / ${n2} é igual à ${n1 / n2}<br>
+            Operador % = ${n1} % ${n2} é igual à ${n1 % n2} (aqui é o resto da divisão inteira. não sei pra que serve essa porra<br>
+            Operador ** -> ${n1} ** ${n2} é igual à ${n1 ** n2}<br>`
+
+            if(n3 == "Grazi" || n3 == "Graziele") {
+                div.innerHTML = `<br> ${result} <br>Ps, Te amo Grazi <br> <a href="index.html">Voltar</a>`
+                }
+                else {
+                div.innerHTML = `<br>${result} <br>Viu ai que o Pai é brabo <br> <a href="index.html">Voltar</a>`
+                }
+            div.style.background = 'rgb(42, 15, 58)'
+            div.style.color = 'white'
+
+        }
+
+        
+        
         
     </script>
 </body>
