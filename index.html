@@ -11,6 +11,27 @@
             color: rgb(0, 0, 0);
             text-align: center;
         }
+         button.proc {
+            padding: 10px;
+            font: bolder 15pt Arial;
+            background-color: rgb(36, 36, 36);
+            color: white;
+            border-radius: 5%;
+            text-shadow: 10px;
+        } 
+        button.prox {
+            padding: 10px;
+            font: bolder 15pt Arial;
+            background-color: rgb(255, 255, 255);
+            color: white;
+            border-radius: 5%;
+            text-shadow: 10px;
+        }
+        input {
+            padding: 10px;
+            font: normal 14pt Arial;
+            border-radius: 5%;
+        }
     </style>
 </head>
 <body>
@@ -24,10 +45,10 @@
     
     <!-- botão para fazer via popup de alerta <button type="button" id="confirma">Clique para fazer via popup</button><br><br> -->
 
-    <input type="number" name="tx1" id="tx1" placeholder="Informe 1 número"> e 
+    <input type="number" name="tx1" id="tx1" placeholder="Informe 1 número" > e 
     <input type="number" name="tx2" id="tx2" placeholder="Informe outro número"> <br><br>
     <input type="text" name="nome" id="nome" placeholder="Informe seu nome: "><br><br>
-    <button type="button" value="Processar" id="processar">Processar</button><br>
+    <button type="button" value="Processar" id="processar" class="proc">Processar</button><br><br>
     <div id="b1">Resultado:</div>
 
 
@@ -35,7 +56,7 @@
 
     </div>
 
-    <p><a href="Aulas\Eventos_DOM.html">Seguir para próximo tutorial, Eventos DOM</a></p>
+    <p><button type="button" class="prox"><a href="Aulas\Eventos_DOM.html">Seguir para próximo tutorial, Eventos DOM</a></button></p>
     
 
     <script>

@@ -15,6 +15,27 @@
             margin-right: auto;
             margin-left: auto;
         }
+        button.proc {
+            padding: 10px;
+            font: bolder 15pt Arial;
+            background-color: rgb(36, 36, 36);
+            color: white;
+            border-radius: 5%;
+            text-shadow: 10px;
+        } 
+        button.prox {
+            padding: 10px;
+            font: bolder 15pt Arial;
+            background-color: rgb(255, 255, 255);
+            color: white;
+            border-radius: 5%;
+            text-shadow: 10px;
+        }
+        input {
+            padding: 10px;
+            font: normal 14pt Arial;
+            border-radius: 5%;
+        }
     </style>
 </head>
 <body>
@@ -23,12 +44,12 @@
     <P>Vamos supor que você foi corno e decidiu virar guardinha do DETRAN <br>
     Insira os dados abaixo: </P>
     <input type="number" name="numero1" id="numero1" placeholder="Velocidade da via"><br>
-    <input type="number" name="numero2" id="numero2" placeholder="Velocidade do carro"><br>
-    <button type="button" id="confirmaNumeros">Confirmar</button> 
-    <button type="button" id="reset">Limpar</button>
+    <input type="number" name="numero2" id="numero2" placeholder="Velocidade do carro"><br><br>
+    <button type="button" id="confirmaNumeros" class="proc">Confirmar</button> 
+    <button type="button" id="reset" class="proc">Limpar</button>
 
     <div id="res"></div>
-    <p><a href="Eventos_DOM.html">Voltar</a></p>
+    <br><button type="button" class="prox"><a href="Eventos_DOM.html">Voltar</a></button>
 
     <script src="Condicoes.js"></script>
 </body>

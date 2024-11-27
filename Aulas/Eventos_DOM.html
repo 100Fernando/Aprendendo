@@ -6,7 +6,7 @@
     <title>Eventos_DOM</title>
     <style>
         body {
-            background-color: rgb(46, 0, 88);
+            background-color: rgb(26, 0, 51);
             color: rgb(176, 233, 255);
             font: normal 15pt Arial;
             text-align: center;
@@ -22,15 +22,31 @@
             margin-left: auto;
             margin-right: auto;
         }
+        button.proc {
+            padding: 10px;
+            font: bolder 15pt Arial;
+            background-color: rgb(36, 36, 36);
+            color: white;
+            border-radius: 5%;
+            text-shadow: 10px;
+        } 
+        button.prox {
+            padding: 10px;
+            font: bolder 15pt Arial;
+            background-color: rgb(255, 255, 255);
+            color: white;
+            border-radius: 5%;
+            text-shadow: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Eventos DOM</h1>
     <h2>Aqui o bicho pega</h2>
     <h3>By: FerramoX</h3>
-    <div id="inicio" onclick="clique()" onmouseleave="segura()">Não clique aqui!</div>
-    <p><a href="..\index.html">Voltar</a></p>
-    <a href="Condicoes.html">Seguir para próxima aula, CONDIÇÕES</a>
+    <div id="inicio" onclick="clique()" onmouseleave="segura()">Não clique aqui!</div><br>
+    <button type="button" class="prox"><a href="..\index.html">Voltar</a></button><br><br>
+    <button type="button" class="prox"><a href="Condicoes.html">Seguir para próxima aula, CONDIÇÕES</a></button>
 
     <script>
         function clique() {
