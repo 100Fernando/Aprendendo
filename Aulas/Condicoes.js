@@ -10,12 +10,46 @@ function clicou() {
     const n2 = document.querySelector('input#numero2')
     const n20 = Number(n2.value)
     const res = document.querySelector('div#res')
-    if(n20 > n10) {
-        res.innerHTML = `<br>A velocidade da via é ${n10}Km/h e o carro estava a ${n20}Km/h, você aplicou uma multa nesse otário e vamos mandar o dinheiro dele pro Lula`
-    } else {
+    if(n20 == n10) {
+        res.innerHTML = `<br>A velocidade da via é ${n10}Km/h e o carro estava a <strong>${n20}Km/h</strong>, esse cara é esperto, mas não mais que nós! Lança uma velocidade maior e vamos multar mesmo assim!`
+    } else if (n20 > n10 && n20 < (n10 * 1.5)) {
+        res.innerHTML = `<br>A velocidade da via é ${n10}Km/h e o carro estava a <strong>${n20}Km/h</strong>, você aplicou uma multa nesse otário e vamos mandar o dinheiro dele pro Lula`
+    } else if (n20 >= (n10 * 1.5)) {
+            res.innerHTML = `<br>A velocidade da via é ${n10}Km/h e o carro estava a <strong>${n20}Km/h</strong>. EITA PREULA! O CARA ACHA QUE É I AYRTON SENNA KKKKK. Vamos tomar a habilitação desse cabra! Dá uma gravíssima e suspende a CNH!! MAIS GRANA PRO DETRAN!!! `
+    } else
+        {
         res.innerHTML = `<br>A velocidade da via é ${n10}Km/h e o carro estava a <strong>${n20}Km/h</strong>. Infelizmente você deixou de faturar pro estado. Lança uma velocidade maior e vamos multar mesmo assim!! `
     }
-    res.innerHTML += `<br>Bom trabalho, temos metas a ser batidas`
+    res.innerHTML += `<br>Bom trabalho, temos metas a serem batidas`
+
+    const dataMulta = new Date()
+    const dia = dataMulta.getDay()
+    switch(dia) {
+        case 0:
+            res.innerHTML += `<br>Data da multa: ${dataMulta} Domingo`
+            break
+        case 1:
+            res.innerHTML += `<br>Data da multa: ${dataMulta} Segunda`
+            break
+        case 2:
+            res.innerHTML += `<br>Data da multa: ${dataMulta} Terça`
+            break
+        case 3:
+            res.innerHTML += `<br>Data da multa: ${dataMulta} Quarta`
+            break
+        case 4:
+            res.innerHTML += `<br>Data da multa: ${dataMulta} Quinta`
+            break
+        case 5:
+            res.innerHTML += `<br>Data da multa: ${dataMulta} Sexta`
+            break
+        case 6:
+            res.innerHTML += `<br>Data da multa: ${dataMulta} Sábado`
+            break
+        default:
+            res.innerHTML += `<br>Data da multa: ${dataMulta} inválida`
+            break
+    }
 
 }
 
