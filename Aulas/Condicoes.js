@@ -15,7 +15,7 @@ function clicou() {
     } else if (n20 > n10 && n20 < (n10 * 1.5)) {
         res.innerHTML = `<br>A velocidade da via é ${n10}Km/h e o carro estava a <strong>${n20}Km/h</strong>, você aplicou uma multa nesse otário e vamos mandar o dinheiro dele pro Lula`
     } else if (n20 >= (n10 * 1.5)) {
-            res.innerHTML = `<br>A velocidade da via é ${n10}Km/h e o carro estava a <strong>${n20}Km/h</strong>. EITA PREULA! O CARA ACHA QUE É I AYRTON SENNA KKKKK. Vamos tomar a habilitação desse cabra! Dá uma gravíssima e suspende a CNH!! MAIS GRANA PRO DETRAN!!! `
+            res.innerHTML = `<br>A velocidade da via é ${n10}Km/h e o carro estava a <strong>${n20}Km/h</strong>. EITA PREULA! O CARA ACHA QUE É O AYRTON SENNA KKKKK. Vamos tomar a habilitação desse cabra! Dá uma gravíssima e suspende a CNH!! MAIS GRANA PRO DETRAN!!! `
     } else
         {
         res.innerHTML = `<br>A velocidade da via é ${n10}Km/h e o carro estava a <strong>${n20}Km/h</strong>. Infelizmente você deixou de faturar pro estado. Lança uma velocidade maior e vamos multar mesmo assim!! `
@@ -23,31 +23,32 @@ function clicou() {
     res.innerHTML += `<br>Bom trabalho, temos metas a serem batidas`
 
     const dataMulta = new Date()
+    const dataFormatada = `${dataMulta.toLocaleDateString()} ${dataMulta.toLocaleTimeString()} `
     const dia = dataMulta.getDay()
     switch(dia) {
         case 0:
-            res.innerHTML += `<br>Data da multa: ${dataMulta} Domingo`
+            res.innerHTML += `<br><br>Data da multa: ${dataFormatada} Domingo`
             break
         case 1:
-            res.innerHTML += `<br>Data da multa: ${dataMulta} Segunda`
+            res.innerHTML += `<br><br>Data da multa: ${dataFormatada} Segunda`
             break
         case 2:
-            res.innerHTML += `<br>Data da multa: ${dataMulta} Terça`
+            res.innerHTML += `<br><br>Data da multa: ${dataFormatada} Terça`
             break
         case 3:
-            res.innerHTML += `<br>Data da multa: ${dataMulta} Quarta`
+            res.innerHTML += `<br><br>Data da multa: ${dataFormatada} Quarta`
             break
         case 4:
-            res.innerHTML += `<br>Data da multa: ${dataMulta} Quinta`
+            res.innerHTML += `<br><br>Data da multa: ${dataFormatada} Quinta`
             break
         case 5:
-            res.innerHTML += `<br>Data da multa: ${dataMulta} Sexta`
+            res.innerHTML += `<br><br>Data da multa: ${dataFormatada} Sexta`
             break
         case 6:
-            res.innerHTML += `<br>Data da multa: ${dataMulta} Sábado`
+            res.innerHTML += `<br><br>Data da multa: ${dataFormatada} Sábado`
             break
         default:
-            res.innerHTML += `<br>Data da multa: ${dataMulta} inválida`
+            res.innerHTML += `<br><br>Data da multa: ${dataFormatada} inválida`
             break
     }
 
