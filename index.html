@@ -4,59 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo Javascript</title>
-    <style>
-        body {
-            background-color: lightgreen;
-            font: normal 14pt Arial;
-            color: rgb(0, 0, 0);
-            text-align: center;
-        }
-         button.proc {
-            padding: 10px;
-            font: bolder 15pt Arial;
-            background-color: rgb(36, 36, 36);
-            color: white;
-            border-radius: 5%;
-            text-shadow: 10px;
-        } 
-        button.prox {
-            padding: 10px;
-            font: bolder 15pt Arial;
-            background-color: rgb(255, 255, 255);
-            color: white;
-            border-radius: 5%;
-            text-shadow: 10px;
-        }
-        input {
-            padding: 10px;
-            font: normal 14pt Arial;
-            border-radius: 5%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/stilo.css">
+  
 </head>
 <body>
-    <h1>Olá</h1>
+    <header><h1>Olá</h1>
 
-    <h2>Me chamo Fernando</h2>
+    <h2>Me chamo Fernando</h2></header>
 
-    <p>Aqui estou aprendendo a realizar cálculos em Javascript</p>
+    <section><p>Aqui estou aprendendo a realizar cálculos em Javascript</p>
 
-    <p>Veja abaixo:</p>
+    <p>Preencha os campos abaixo:</p>
     
     <!-- botão para fazer via popup de alerta <button type="button" id="confirma">Clique para fazer via popup</button><br><br> -->
 
-    <input type="number" name="tx1" id="tx1" placeholder="Informe 1 número" > e 
+    <input type="number" name="tx1" id="tx1" placeholder="Informe 1 número" ><br>
+     e <br>
     <input type="number" name="tx2" id="tx2" placeholder="Informe outro número"> <br><br>
     <input type="text" name="nome" id="nome" placeholder="Informe seu nome: "><br><br>
     <button type="button" value="Processar" id="processar" class="proc">Processar</button><br><br>
-    <div id="b1">Resultado:</div>
+    <div id="b1">O resultado aparecerá aqui:</div>
 
 
     <div id="a1">
 
     </div>
+    </section>
 
-    <p><button type="button" class="prox"><a href="Aulas\Eventos_DOM.html">Seguir para próximo tutorial, Eventos DOM</a></button></p>
+    <div><p><button type="button" class="prox"><a href="Aulas\Eventos_DOM.html">Seguir para próximo tutorial, Eventos DOM</a></button></p></div>
+    <br><br>
+    <footer>&copy; FerramoX</footer>
     
 
     <script>
@@ -90,6 +67,7 @@
         }
 
         
+        /* AQUI FOI A PRIMEIRA TENTATIVA, PORÉM É UM MÉTODO DEFASADO!!
 
         const div = document.querySelector('div#a1')
         const confirmar = document.querySelector('button#confirma')
@@ -118,7 +96,7 @@
             div.style.color = 'white'
 
         }
-
+            */
         
         
         

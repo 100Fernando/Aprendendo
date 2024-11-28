@@ -23,6 +23,7 @@ function clicou() {
         res.innerHTML = `<br>A velocidade da via é ${n10}Km/h e o carro estava a <strong>${n20}Km/h</strong>. Infelizmente você deixou de faturar pro estado. Lança uma velocidade maior e vamos multar mesmo assim!! `
     }
     res.innerHTML += `<br>Bom trabalho, temos metas a serem batidas`
+    res.style.background = "rgb(180, 216, 80)"
 
     const dataMulta = new Date()
     const dataFormatada = `${dataMulta.toLocaleDateString()} ${dataMulta.toLocaleTimeString()} `

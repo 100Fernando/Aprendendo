@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos_DOM</title>
+    <link rel="stylesheet" href="../css/stilo.css">
     <style>
-        body {
-            background-color: rgb(26, 0, 51);
-            color: rgb(176, 233, 255);
-            font: normal 15pt Arial;
-            text-align: center;
-        }
         div#inicio {
             font: normal 15pt Arial;
             background-color: rgb(0, 116, 35);
@@ -22,31 +17,19 @@
             margin-left: auto;
             margin-right: auto;
         }
-        button.proc {
-            padding: 10px;
-            font: bolder 15pt Arial;
-            background-color: rgb(36, 36, 36);
-            color: white;
-            border-radius: 5%;
-            text-shadow: 10px;
-        } 
-        button.prox {
-            padding: 10px;
-            font: bolder 15pt Arial;
-            background-color: rgb(255, 255, 255);
-            color: white;
-            border-radius: 5%;
-            text-shadow: 10px;
-        }
+       
     </style>
 </head>
 <body>
-    <h1>Eventos DOM</h1>
+    <button type="button" class="prox"><a href="..\index.html">Voltar</a></button>
+    <header><h1>Eventos DOM</h1>
     <h2>Aqui o bicho pega</h2>
-    <h3>By: FerramoX</h3>
+    </header>
     <div id="inicio" onclick="clique()" onmouseleave="segura()">Não clique aqui!</div><br>
-    <button type="button" class="prox"><a href="..\index.html">Voltar</a></button><br><br>
-    <button type="button" class="prox"><a href="Condicoes.html">Seguir para próxima aula, CONDIÇÕES</a></button>
+    <br><br>
+    <div><button type="button" class="prox"><a href="Condicoes.html">Seguir para próxima aula, CONDIÇÕES</a></button></div>
+    <br><br>
+    <footer>&copy; FerramoX</footer>
 
     <script>
         function clique() {
