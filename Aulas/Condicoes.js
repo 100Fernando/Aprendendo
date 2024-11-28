@@ -1,8 +1,10 @@
 const confirma = document.querySelector("button#confirmaNumeros")
 const reset = document.querySelector('button#reset')
+const proximo = document.querySelector('button#exercicio')
 
 confirma.addEventListener('click', clicou)
 reset.addEventListener('click', resetar)
+proximo.addEventListener('click', exercicio)
 
 function clicou() {
     const n1 = document.querySelector('input#numero1')
@@ -56,4 +58,8 @@ function clicou() {
 
 function resetar () {
     window.location = "Condicoes.html"
+}
+
+function exercicio() {
+    window.location = "../exercicios/exercicio1.html"
 }

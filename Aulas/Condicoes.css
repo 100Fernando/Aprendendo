@@ -1,0 +1,31 @@
+
+        body {
+            background-color: aquamarine;
+            font: normal 16pt Arial;
+            text-align: center;
+        }
+        div {
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        button.proc {
+            padding: 10px;
+            font: bolder 15pt Arial;
+            background-color: rgb(36, 36, 36);
+            color: white;
+            border-radius: 5%;
+            text-shadow: 10px;
+        } 
+        button.prox {
+            padding: 10px;
+            font: bolder 15pt Arial;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5%;
+            text-shadow: 10px;
+        }
+        input {
+            padding: 10px;
+            font: normal 14pt Arial;
+            border-radius: 5%;
+        }
