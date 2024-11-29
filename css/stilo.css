@@ -82,3 +82,22 @@ img {
     height: auto;
     display: block;
 }
+
+div.clima {
+    font: normal 10pt Arial;
+}
+
+input#horaDesejada {
+    padding: 2px;
+    font: normal 10pt Arial;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+}
+button#horaDesejada {
+    padding: 2px;
+    font: bolder 8pt Arial;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.363);
+} 
