@@ -2,9 +2,11 @@ const voltar = document.querySelector('button.voltar')
 const imagem = document.querySelector('img#imagem')
 const corpo  = document.querySelector('body')
 const altera = document.querySelector('button#horaDesejada')
+const passa = document.querySelector('button.prox')
 
 voltar.addEventListener("click", volta)
 altera.addEventListener('click', alterarHora)
+passa.addEventListener('click', proximo)
 
 function volta() {
  window.location = "../Aulas/Condicoes.html"
@@ -59,4 +61,8 @@ function alterarHora() {
     } else {
         imagem.src = "../img/noite.png"
     }
+}
+
+function proximo() {
+    window.location = "exercicio2.html"
 }
