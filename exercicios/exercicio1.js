@@ -2,7 +2,7 @@ const voltar = document.querySelector('button.voltar')
 const imagem = document.querySelector('img#imagem')
 const corpo  = document.querySelector('body')
 const altera = document.querySelector('button#horaDesejada')
-const passa = document.querySelector('button.prox')
+const passa = document.querySelector('button.prox1')
 
 voltar.addEventListener("click", volta)
 altera.addEventListener('click', alterarHora)
