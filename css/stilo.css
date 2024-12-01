@@ -46,6 +46,11 @@ div {
     text-align: center;
 }
 
+table {
+    margin: auto;
+}
+
+
 button.proc {
     padding: 10px;
     font: bolder 15pt Arial;

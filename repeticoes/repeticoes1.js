@@ -3,12 +3,16 @@ const passa = document.querySelector('button.prox1')
 const processa = document.querySelector('button#confirma')
 
 voltar.addEventListener("click", volta)
-//passa.addEventListener('click', proximo)
+passa.addEventListener('click', proximo)
 processa.addEventListener('click', processar)
 
 function volta() {
     window.location = "../exercicios/exercicio2.html"
    }
+
+function proximo () {
+    window.location = "repeticoes2.html"
+}
 
 const divRepet = document.querySelector('div#repet')
 let dentroDiv = document.createElement('p')
