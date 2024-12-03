@@ -12,6 +12,10 @@ voltar.addEventListener('click', () => {
     window.location = "../repeticoes/repeticoes4.html"
 })
 
+prox1.addEventListener('click', () => {
+    window.location = '../funcoes/funcoes1.html'
+})
+
 pesquisar.addEventListener('click', pesquisarArray)
 
 let a = []
