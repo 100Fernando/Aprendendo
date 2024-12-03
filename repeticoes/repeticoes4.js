@@ -1,10 +1,15 @@
 const voltar = document.querySelector('button.voltar')
 const tabuada = document.querySelector('button#tabuada')
 const divTabuada = document.querySelector('div#tabuada')
+const prox1 = document.querySelector('button.prox1')
 
 
 voltar.addEventListener("click", () => {
     window.location = "repeticoes3.html"
+})
+
+prox1.addEventListener('click', () => {
+    window.location = "../variaveiscompostas/arrays.html"
 })
 
 tabuada.addEventListener('click', gerarTabuada)

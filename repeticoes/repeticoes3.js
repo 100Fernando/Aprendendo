@@ -24,7 +24,12 @@ function gerarPasso() {
         const pas = document.querySelector('input#passo')
         const inicio = Number(ini.value)
         const fim = Number(fi.value)
-        const passo = Number(pas.value)
+        let passo = Number(pas.value)
+
+        if (passo == 0) {
+            alert('Atenção! O Passo não pode ser 0. Vamos considerar o passo sendo 1')
+            passo = 1
+        }
 
         let result = document.createElement('p')
 
