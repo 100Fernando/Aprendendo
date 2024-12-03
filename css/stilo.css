@@ -48,6 +48,15 @@ div {
 
 table {
     margin: auto;
+    border: 1px solid rgb(177, 177, 177);
+}
+
+td {
+    border: 1px solid rgb(177, 177, 177);
+}
+
+th {
+    border: 1px solid rgb(177, 177, 177);
 }
 
 

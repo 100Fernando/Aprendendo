@@ -26,7 +26,7 @@ function processo() {
         foto1.setAttribute('id', 'foto')
         if(estilo[0].checked) {
             tipo = "Masculino"
-            if(ano < anoAtual && ano > 2020) {
+            if(ano <= anoAtual && ano > 2020) {
                 foto1.setAttribute('src', '../img/M3_2024.PNG')
             } else if (ano <=2020 && ano > 2010) {
                 foto1.setAttribute('src', '../img/CIVIC_2010.png')
@@ -41,7 +41,7 @@ function processo() {
             }
         } else {
             tipo = "Feminino"
-            if(ano < anoAtual && ano > 2020) {
+            if(ano <= anoAtual && ano > 2020) {
                 foto1.setAttribute('src', '../img/dolphin_2024.jpg')
             } else if (ano <=2020 && ano > 2010) {
                 foto1.setAttribute('src', '../img/CHERRY_2019.png')

@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo Javascript</title>
     <link rel="stylesheet" href="css/stilo.css">
-  
+
 </head>
+
 <body>
-    <div class="prox"><p><button type="button" class="prox1"><a href="Aulas\Eventos_DOM.html">Próximo</a></button></p></div>
-    
-    <header><h1>Olá</h1>
-
-    <h2>Me chamo Fernando</h2></header>
-
-    <section><p>Aqui estou aprendendo a realizar cálculos em Javascript</p>
-
-    <p>Preencha os campos abaixo:</p>
-    
-    <!-- botão para fazer via popup de alerta <button type="button" id="confirma">Clique para fazer via popup</button><br><br> -->
-
-    <input type="number" name="tx1" id="tx1" placeholder="Informe 1 número" ><br>
-     e <br>
-    <input type="number" name="tx2" id="tx2" placeholder="Informe outro número"> <br><br>
-    <input type="text" name="nome" id="nome" placeholder="Informe seu nome: "><br><br>
-    <button type="button" value="Processar" id="processar" class="proc">Processar</button><br><br>
-    <div id="b1">O resultado aparecerá aqui:</div>
-
-
-    <div id="a1">
-
+    <div class="prox">
+        <p><button type="button" class="prox1"><a href="Aulas\Eventos_DOM.html">Próximo</a></button></p>
     </div>
+
+    <header>
+        <h1>Olá</h1>
+
+        <h2>Me chamo Fernando</h2>
+    </header>
+
+    <section>
+        <p>Aqui estou aprendendo a realizar cálculos em Javascript</p>
+
+        <p>Preencha os campos abaixo:</p>
+
+        <!-- botão para fazer via popup de alerta <button type="button" id="confirma">Clique para fazer via popup</button><br><br> -->
+
+        <input type="number" name="tx1" id="tx1" placeholder="Informe 1 número"><br>
+        e <br>
+        <input type="number" name="tx2" id="tx2" placeholder="Informe outro número"> <br><br>
+        <input type="text" name="nome" id="nome" placeholder="Informe seu nome: "><br><br>
+        <button type="button" value="Processar" id="processar" class="proc">Processar</button><br><br>
+        <div id="b1">O resultado aparecerá aqui:</div>
+
+
+        <div id="a1">
+
+        </div>
     </section>
 
     <br><br>
     <footer>&copy; FerramoX</footer>
-    
+
 
     <script>
         const processar = document.querySelector('button#processar')
@@ -48,9 +55,15 @@
             const tx11 = Number(tx1.value)
             const tx22 = Number(tx2.value)
             const nome1 = String(nome.value)
-            const letras = nome1.length
-            const divResult = document.querySelector('div#b1')
-            const result = `<br>O resultado é: <br>
+
+            if (tx11 == '' || tx22 == '') {
+                alert('Por favor, informe os dados para processar!')
+            } else {
+
+
+                const letras = nome1.length
+                const divResult = document.querySelector('div#b1')
+                const result = `<br>O resultado é: <br>
             Operador de adição (+): ${tx11} + ${tx22} = ${tx11 + tx22} <br>
             Operador de subtração (-): ${tx11} - ${tx22} = ${tx11 - tx22} <br>
             Operador de multiplicação (*): ${tx11} * ${tx22} = ${tx11 * tx22} <br>
@@ -58,16 +71,17 @@
             Operador de resto de divisão inteira (%): ${tx11} % ${tx22} = ${tx11 % tx22} <br> 
             Operador de potência (**): ${tx11} ** ${tx22} = ${tx11 ** tx22} <br>
             <br>Seu nome é: ${nome1} e tem ${letras} letras! <br>`
-            if(nome1 == "Grazi" || nome1 == "Graziele") {
-                divResult.innerHTML = `${result} <br>PS, te amo, meu bem!!`
-            } else {
-                divResult.innerHTML = `${result} <br>Viu como o pai é brabo no Javascript??`
-            }
-            divResult.style.background = "rgb(180, 216, 80)"
+                if (nome1 == "Grazi" || nome1 == "Graziele") {
+                    divResult.innerHTML = `${result} <br>PS, te amo, meu bem!!`
+                } else {
+                    divResult.innerHTML = `${result} <br>Viu como o pai é brabo no Javascript??`
+                }
+                divResult.style.background = "rgb(180, 216, 80)"
 
+            }
         }
 
-        
+
         /* AQUI FOI A PRIMEIRA TENTATIVA, PORÉM É UM MÉTODO DEFASADO!!
 
         const div = document.querySelector('div#a1')
@@ -98,9 +112,10 @@
 
         }
             */
-        
-        
-        
+
+
+
     </script>
 </body>
+
 </html>
