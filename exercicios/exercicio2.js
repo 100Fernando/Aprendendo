@@ -13,7 +13,7 @@ function volta() {
 function processo() {
     const data = new Date()
     const anoAtual = data.getFullYear()
-    const ano1 = document.querySelector('input#ano')
+    const ano1 = document.querySelector('input#ano').value
     const ano = Number(ano1.value)
     const resultado = document.querySelector('div#resultados')
     if(ano == 0 || ano > anoAtual) {

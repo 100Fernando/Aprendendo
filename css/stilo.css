@@ -20,9 +20,6 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
     color: black;
     text-align: center;
-    
-
-
 }
 
 footer {
@@ -94,12 +91,12 @@ input {
     font: normal 14pt Arial;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
-}
-img {
+} 
+ img {
     max-width: 100%;
     height: auto;
     display: block;
-}
+} 
 
 div.clima {
     font: normal 10pt Arial;

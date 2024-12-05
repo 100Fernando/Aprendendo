@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo Javascript</title>
     <link rel="stylesheet" href="css/stilo.css">
+    <link rel="icon" href="/img/cabeca.png">
 
 </head>
 
@@ -51,17 +52,17 @@
         function processo() {
             const tx1 = document.querySelector('input#tx1')
             const tx2 = document.querySelector('input#tx2')
-            const nome = document.querySelector('input#nome')
+            const nome = document.querySelector('input#nome').value
             const tx11 = Number(tx1.value)
             const tx22 = Number(tx2.value)
-            const nome1 = String(nome.value)
+           // const nome1 = String(nome.value)
 
             if (tx11 == '' || tx22 == '') {
                 alert('Por favor, informe os dados para processar!')
             } else {
 
 
-                const letras = nome1.length
+                //const letras = nome1.length
                 const divResult = document.querySelector('div#b1')
                 const result = `<br>O resultado é: <br>
             Operador de adição (+): ${tx11} + ${tx22} = ${tx11 + tx22} <br>
@@ -70,8 +71,8 @@
             Operador de divisão: ${tx11} / ${tx22} = ${tx11 / tx22} <br>
             Operador de resto de divisão inteira (%): ${tx11} % ${tx22} = ${tx11 % tx22} <br> 
             Operador de potência (**): ${tx11} ** ${tx22} = ${tx11 ** tx22} <br>
-            <br>Seu nome é: ${nome1} e tem ${letras} letras! <br>`
-                if (nome1 == "Grazi" || nome1 == "Graziele") {
+            <br>Seu nome é: ${nome} e tem ${nome.length} letras! <br>`
+                if (nome == "Grazi" || nome == "Graziele") {
                     divResult.innerHTML = `${result} <br>PS, te amo, meu bem!!`
                 } else {
                     divResult.innerHTML = `${result} <br>Viu como o pai é brabo no Javascript??`

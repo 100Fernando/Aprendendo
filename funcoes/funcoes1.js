@@ -6,16 +6,26 @@ voltar.addEventListener('click', () => {
     window.location = "../variaveiscompostas/arrays.html"
 })
 
-confirma.addEventListener('click',incluiN)
+
 
 let num = document.querySelector('input#n1')
-let n = Number(n1.value)
-let opcao = document.createElement('option') 
 
-function incluiN(n) {
-    opcao.innerHtml += `${n}`
 
-    seletor.appendChild(opcao)
+let n = []
+carregar.addEventListener('click', incluiN)
 
-    
+function incluiN() {
+    seletor.innerHTML = ''
+    n.push(Number(n1.value))
+
+    for (let x = 0; x < n.length; x++) {
+        let opcao = document.createElement('option')
+        opcao.setAttribute('value', n[x])
+        opcao.innerText += `Inserido nº: ${n[x]}`
+        seletor.appendChild(opcao)
+        seletor.setAttribute('size', n.length)
+    }
+
+    num.value = ''
+
 }

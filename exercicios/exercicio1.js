@@ -15,6 +15,7 @@ function volta() {
 const hora = new Date()
 const divHoras = document.querySelector("div#horas")
 let horas = hora.getHours()
+let min = hora.getMinutes()
 
 function horario() {
 
@@ -25,7 +26,7 @@ function horario() {
         divHoras.innerHTML = `Boa tarde, agora são ${horas}h`
         corpo.style.background = "rgb(146, 41, 0)"
     } else {
-        divHoras.innerHTML = `Boa noite, agora são ${horas}h`
+        divHoras.innerHTML = `Boa noite, agora são ${horas}:h`
         corpo.style.background = "rgb(85, 85, 85)"
     }
 
