@@ -10,18 +10,35 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="spinner">
+            <img src="../img/cabeca.png" alt="Logo do Site">
+        </div>
+        <div class="navbar-title">
+            <h1 class="tituloNav">Estudos JavaScript</h1>
+
+            <ul class="navbar-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
     <button type="button" class="voltar">Voltar</button>
     <button type="button" class="prox1">Próximo</button>
     <header>
-        <h1>Funcoes com parametros</h1>
+        <h1>Funcoes e repetições com vetor</h1>
         <h3>Sei nem o que fazer</h3>
     </header>
 
     <section>
-        <input type="number" name="n1" id="n1" placeholder="Informe nº de 1 a 100"> <button type="button" class="proc"
-            id="confirma">Carregar</button>
+        <input type="number" name="n1" id="n1" placeholder="Informe nº de 1 a 100">
+        <button type="button" class="proc" id="confirma">Carregar</button> <br>
 
-        <div><select name="seletor" id="seletor"></select></div>
+        <div><select name="seletor" id="seletor" style="visibility: hidden;"></select></div><br>
+        <button type="button" class="proc" style="visibility:hidden;" id="Processar">Processar</button><br>
+        <div id="resultado"></div>
+
     </section>
 
     <footer>&copy;FerramoX</footer>

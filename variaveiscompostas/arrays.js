@@ -83,6 +83,7 @@ function confirmado() {
 
 
     n0.value = ''
+    n0.focus()
 }
 
 function pesquisarArray() {
