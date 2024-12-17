@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="../../css/stilo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="spinner">
+            <img src="../../img/fernando.png" alt="Logo do Site">
+        </div>
+        <div class="navbar-title">
+            <h1 class="tituloNav">Estudos JavaScript</h1>
+
+            <ul class="navbar-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <button type="button" class="voltar" id="voltar" title="Voltar">Voltar</button>
+    <div class="prox">
+        <p><button type="button" class="prox1"><a href="Aulas\Eventos_DOM.html">Próximo</a></button></p>
+    </div>
+
+    <header>
+        <H1>Coletando informações de um formulário</H1>
+        <p>E transportando para um objeto</p>
+    </header>
+
+    <section>
+        <h2>Criando um form</h2>
+
+        <form action="" method="get" id="form1">
+            <input type="text" name="nome" id="nome" placeholder="Nome"> <br>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"> <br>
+            <input type="number" name="idade" id="idade" placeholder="Idade"><br>
+
+            <button type="submit" class="proc" id="salvar">Salvar</button>
+        </form>
+
+        <div id="res"></div>
+    </section>
+    
+    <script src="form.js"></script>
+</body>
+</html>
